@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import menuUnSelected from "../../assets/icons/burger-menu.svg";
 import menuSelected from "../../assets/icons/left-arrow.png";
 import DropdownMenuItem from "./DropdownMenuItem/DropdownMenuItem";
@@ -19,10 +20,10 @@ export default function Navbar() {
   if (menuImage === menuSelected) {
      menuItems= (
       <>
-        <DropdownMenuItem text="Experience"/>
-        <DropdownMenuItem text="Projects"/>
-        <DropdownMenuItem text="About"/>
-        <DropdownMenuItem text="Skills"/>
+        <Link to="/"><DropdownMenuItem text="Home"/></Link>
+        <Link to="/Experience"><DropdownMenuItem text="Experience"/></Link>
+        <Link to="/Projects"><DropdownMenuItem text="Projects"/></Link>
+        <Link to="/About"><DropdownMenuItem text="About"/></Link>
         <DropdownMenuItem text="Contact"/>
       </>
     );
