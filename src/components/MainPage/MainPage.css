@@ -1,0 +1,46 @@
+.titleContainer {
+  position: absolute;
+  left: 16.7%;
+  padding-top: 6.7%;
+  display: flex;
+  font-size: 3.2vw;
+}
+
+.Hello {
+  color: #A9A9A9;
+  margin-right: .3em;
+  min-width: fit-content;
+  display: flex
+}
+
+.Hello div {
+  margin-left: 1vw;
+  color: #FDFD96;
+  margin-right: 30vw;
+}
+
+.picture {
+  width: 20%;
+  height: 20%;
+  border-radius: 1000px;
+  outline: #A9A9A9 solid;
+  transition: transform .7s ease-in-out;
+}
+
+.picture:hover {
+  transform: rotate(360deg);
+}
+
+.developer {
+  color: #A9A9A9;
+  position: absolute;
+  left: 13.5em;
+  padding-top: 12em;
+  font-size: 1.25vw;
+}
+
+@media (max-width: 700px) {
+  .titleContainer {
+    display: block;
+  }
+}

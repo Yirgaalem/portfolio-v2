@@ -1,0 +1,13 @@
+hr {
+  margin-top: 100px;
+  padding: 2px;  
+  width: 4%;
+  background-color: transparent;
+  transform: rotate(90deg);
+  transition-delay: 250ms;
+  transition-property: transform;
+}
+
+.transformed-state {
+  transform: rotate(10deg);
+}

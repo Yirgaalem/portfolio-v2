@@ -1,0 +1,58 @@
+.projectTabContainer {
+  position: relative;
+  text-align: center;
+  display: flex;
+  height: 27vw;
+  width: 21vw;
+}
+
+.projectImage {
+  margin: 10px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.projectText {
+  position: absolute;
+  bottom: 5%;
+  left: 7%;
+  font-size: 1.2vw;
+}
+
+/* Hover Content */
+.hoverContent { 
+  position: absolute; display: block; bottom: .7vw; left: .5vw; opacity: 0; transition: all .2s ease-in-out;
+  background-color: rgba(164,164,164,.7);  width: 95%;
+  height: 28%;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.projectTabContainer:hover .projectText{
+  filter: blur(8px);
+}
+
+.projectTabContainer:hover .hoverContent {
+  opacity: 1;
+}
+
+.hoverTitle {
+  position: absolute;
+  left: 1.5vw;
+  bottom: 4.5vw;
+}
+
+.hoverText {
+  position: relative;
+  top: 1.4vw;
+  left: 1.1vw;
+  width: 90%;
+}
+
+.hoverLinkButton {
+  border: 0px;
+  border-radius: 4px; 
+  padding: .2vw .7vw;
+  position: relative;
+  bottom: -1.3vw;
+}
+
