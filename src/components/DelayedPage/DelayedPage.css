@@ -1,4 +1,4 @@
-hr {
+/* hr {
   margin-top: 100px;
   padding: 2px;  
   width: 4%;
@@ -10,4 +10,29 @@ hr {
 
 .transformed-state {
   transform: rotate(10deg);
+} */
+
+.welcomeContainer {
+  display:flex;
+  width: fit-content;
+  font-size: 2vw;
+  position: absolute;
+  left: 37vw;
+  animation: drop 1s ease forwards;
+}
+
+.welcomeLeft, .welcomeRight {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: .01px;
+  -webkit-text-stroke-color: #FDFD96;
+}
+
+.welcomeMiddle {
+  color: #FDFD96
+}
+
+@keyframes drop{
+  0%{opacity: 0}
+  70%{transform: translateY(450px)}
+  100%{transform: translateY(400px)}
 }

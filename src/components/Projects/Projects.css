@@ -1,7 +1,28 @@
-.projectsContainer {
+.projectsTitleContainer {
   display: flex;
+  justify-content: center;
+}
+
+.projectsTitleLeft, .projectsTitle, .projectsTitleRight {
+  font-size: 3vw;
+  position: relative;
+  bottom: 4.1vw;
+}
+
+.projectsTitleLeft, .projectsTitleRight {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: .01px;
+  -webkit-text-stroke-color: #FDFD96;
+}
+
+.projectsTitle {
+  color: #FDFD96;
+}
+
+.projectsContainer {
+  display: flex; /*change to grid*/
   flex-direction: row;
-  margin-top: 2%;
-  margin-left: 12%;
+  margin-top: 2vw;
+  margin-left: 17vw;
   width: 75%;
 }

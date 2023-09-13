@@ -17,13 +17,17 @@ export default function ComponentRouter() {
       </Routes>
     </BrowserRouter>
   );
+  // const url = /[]/g;
   
+  // if (url.test(window.location.href)) {
+  //   console.log(url);
+  // }
   const [pageToDisplay, setPageToDisplay] = useState(delayedDisplay);
   // const [pageToDisplay, setPageToDisplay] = useState(initalDisplay);
 
   // setTimeout(() => {
   //   setPageToDisplay(delayedDisplay);
-  // }, 1000);
+  // }, 2000);
 
   return (
     <>

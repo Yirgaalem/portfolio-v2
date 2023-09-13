@@ -20,11 +20,11 @@
 }
 
 .picture {
-  width: 20%;
-  height: 20%;
+  width: 16.5vw;
+  height: 16.5vw;
   border-radius: 1000px;
   outline: #A9A9A9 solid;
-  transition: transform .7s ease-in-out;
+  transition: transform 1.5s ease-in-out;
 }
 
 .picture:hover {
@@ -39,8 +39,8 @@
   font-size: 1.25vw;
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   .titleContainer {
     display: block;
   }
-}
+} */
