@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DelayedPage from "./components/DelayedPage/DelayedPage";
 import MainPage from "./components/MainPage/MainPage"
 import Projects from "../src/components/Projects/Projects";
-import DelayedPage from "./components/DelayedPage/DelayedPage";
+import Experience from "./components/Experience/Experience";
 import { useState } from "react";
 
 export default function ComponentRouter() {
@@ -11,7 +12,7 @@ export default function ComponentRouter() {
    <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<MainPage/>}/>
-        <Route exact path="/Experience" element={<MainPage/>}/>
+        <Route exact path="/Experience" element={<Experience/>}/>
         <Route exact path="/Projects" element={<Projects/>}/>
         <Route exact path="/About" element={<MainPage/>}/>
       </Routes>

@@ -1,0 +1,79 @@
+.jobContainer {
+  position: absolute;
+  left: 5vw;
+  /* outline: 2px solid white; */
+  max-height: 14vw;
+  max-width: 23vw;
+}
+
+.descContainer {
+  position: relative;
+  opacity: 0;
+  background-color: #232F3E;
+  border-radius: 10px;
+  height: 14vw;
+  width: 23vw;
+  bottom: 16vw;
+}
+
+.jobContainer:hover .descContainer{
+  animation: display;
+  animation: spin-into 1s ease forwards;
+  animation-delay: .4s;
+}
+
+.jobContainer:hover .image {
+  animation: spin-away 1s ease forwards;
+}
+
+.jobContainer:hover .title {
+  opacity: 0;
+}
+
+.image {
+  width: 23vw;
+  border-radius: 10px;
+}
+
+.title {
+  position: relative;
+  left: 2.7vw;
+  bottom: 3.2vw;
+  font-size: 1.2vw;
+}
+
+.date {
+  position: absolute;
+  top: 1vw;
+  right: 2vw;
+}
+
+.desc {
+  /* position: relative; */
+  /* padding-top: 1.6vw;
+  padding-left: 1.6vw; */
+  padding: 1.6vw .5vw 0vw 1.3vw;
+  font-size: 1.2vw;
+  /* outline: 2px solid white; */
+}
+
+@keyframes spin-away{
+  /* 0%{} */
+  50%{opacity: 30}
+  100%{rotate: 360deg; opacity:0}
+}
+
+@keyframes spin-into{
+  0%{opacity: 0}
+  70%{opacity: 70}
+  100%{rotate: 360deg; opacity:100}
+}
+
+@keyframes display {
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
