@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar'
 import Job from "./Job/Job";
+import Copyright from '../Copyright/Copyright';
 import amazon from "../../assets/images/projectImages/amazon.png";
 
 export default function Experience() {
@@ -25,6 +26,7 @@ export default function Experience() {
            date={"05/23-08/23"}
            color={"#232F3E"}
            />
+      <Copyright/>
     </>
   );
 }

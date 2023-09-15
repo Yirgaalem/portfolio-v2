@@ -1,0 +1,24 @@
+.contactTitle {
+  text-align: center;
+}
+
+.contactTitle {
+  font-size: 1.3vw;
+}
+
+.contactContainer {
+  width: auto;
+}
+
+.socials {
+  display: flex;
+  margin: 4vw 0vw 0vw 40.5vw;
+}
+
+.linkedin, .github, .resume {
+  margin-right: 4vw;
+}
+
+.resume, .github, .linkedin, .email {
+  width: 2vw;
+}

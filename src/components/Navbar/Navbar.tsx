@@ -8,14 +8,6 @@ import "./Navbar.css"
 export default function Navbar() {
   const [menuImage, setMenuImage] = useState(menuUnSelected);
   
-  let imageStyle = {
-    maxWidth: "1.5em",
-    float: "right",
-    margin: "2em",
-    padding: ".2em",
-    border: "solid"
-  };
-  
   let menuItems: JSX.Element|undefined;
   if (menuImage === menuSelected) {
      menuItems= (
@@ -24,7 +16,7 @@ export default function Navbar() {
         <Link to="/Experience"><DropdownMenuItem text="Experience"/></Link>
         <Link to="/Projects"><DropdownMenuItem text="Projects"/></Link>
         <Link to="/About"><DropdownMenuItem text="About"/></Link>
-        <DropdownMenuItem text="Contact"/>
+        <Link to="/Contact"><DropdownMenuItem text="Contact"/></Link>
       </>
     );
   }

@@ -1,6 +1,8 @@
 import React from "react";
 import ProjectTab from "./ProjectTab/ProjectTab";
 import Navbar from "../Navbar/Navbar";
+import Copyright from '../Copyright/Copyright';
+
 import portfolioImage from "../../assets/images/projectImages/portfolio.png";
 import discordImage from "../../assets/images/projectImages/loggy.png"
 import simpleViewImage from "../../assets/images/projectImages/SimpleView.png"
@@ -38,6 +40,7 @@ export default function Projects() {
         />  
         
       </div>
+      <Copyright/>
     </>
   );
 }
